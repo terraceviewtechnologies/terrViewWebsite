@@ -11,16 +11,23 @@ img {
     height:auto;
 }
 
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: light-300;
+  font-style: normal;
+}
+
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 :root {
@@ -29,6 +36,8 @@ p {
 body {
     /*background-image: linear-gradient(to bottom, #BFC6C4, #9CAB84, black);*/
     background-image: url(images/tree2.png);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
 
 }
 
@@ -46,13 +55,16 @@ html, body {
 
 
 .header {
-    padding: 8px;
+
     display: flex;
     flex-direction: row;
     border-bottom-style: solid;
 }
 
 .header-left{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
     flex:50%;
 }
 
@@ -142,16 +154,10 @@ p {
 }
 
 
-a {
+.opening-link {
     text-decoration: none;
-    color: #565656;
-    transition: all 0.3s;
+    color: #e7f6f6;
     font-size: 1.5rem;
-    margin-right: 1.2em;
-}
-
-a:last-child {
-    margin: 0;
 }
 
 .containers {
@@ -251,8 +257,8 @@ a:last-child {
 }
 
 /* Modal Content/Box */
-.modal-content {
-  margin: 15% auto; /* 15% from the top and centered */
+.form-container {
+  margin: auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
@@ -261,24 +267,6 @@ a:last-child {
   padding: 20px;
 }
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* form in modal*/
-
-/* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     background-color: #e7f6f6;
   width: 100%; /* Full width */
@@ -291,7 +279,7 @@ input[type=text], select, textarea {
   resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Style the submit button with a specific background color etc */
+
 input[type=submit] {
   background-color: #94d4d4;
   color: white;
@@ -301,7 +289,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
   background-color: #47704b;
 }
@@ -337,6 +325,9 @@ input[type=submit]:hover {
     margin-bottom: 1.5rem;
 }
 
+.about-text{
+    text-align:center;
+}
 /* hamburger */
 
 *, *:before, *:after
@@ -394,7 +385,7 @@ label .hamburger:after { bottom: -10px; }
 label input { display: none; }
 
 label input:checked + .menu {
-  box-shadow: 0 0 0 100vw #456847, 0 0 0 100vh #456847;
+  box-shadow: 0 0 0 100vw #94d6d5, 0 0 0 100vh #94d6d5;
   border-radius: 0;
 
 }
@@ -436,11 +427,13 @@ label ul {
 label a {
   margin-bottom: 1em;
   display: block;
-  color: #f38630;
+  color: black;
   text-decoration: none;
 
 }
 
-.menu{
-    background-color: black;
+.menu-item {
+    list-style: none;
+    margin: 1rem;
+    padding:1rem;
 }

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Terrace View Technologies</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,6 +16,9 @@
 
     <div class="header">
         <div class="header-left">
+            <a href="home.html">
+            <img src="images/terrViewLogo.png" alt="logo" style="max-height: 6rem;">
+            </a>
             <h1>Terrace View Technologies</h1>
         </div>
         <div class="header-right">
@@ -20,14 +26,14 @@
             <input type="checkbox">
             <span class="menu"> <span class="hamburger"></span> </span>
             <ul>
-              <li> <a href="home.html">Home</a> </li>
-              <li> <a href="about.html">About</a> </li>
-              <li> <a  href="contact.html">Contact</a> </li>
+              <li class="menu-item"> <a href="home.html">Home</a> </li>
+              <li class="menu-item"> <a href="about.html">About</a> </li>
+              <li class="menu-item"> <a  href="contact.html">Contact</a> </li>
             </ul>
     </div>
+    </div>
 
-  <div class="modal-content">
-    <span class="close">&times;</span>
+  <div class="form-container">
     <form name="contact" method="POST" data-netlify="true">
 
         <label for="name">Name</label>
