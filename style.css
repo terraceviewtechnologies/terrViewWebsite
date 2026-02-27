@@ -1,0 +1,446 @@
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+
+}
+body {
+    /*background-image: linear-gradient(to bottom, #BFC6C4, #9CAB84, black);*/
+    background-image: url(images/tree2.png);
+
+}
+
+html, body {
+  height: 100%;
+}
+
+.intro{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+
+
+.header {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    border-bottom-style: solid;
+}
+
+.header-left{
+    flex:50%;
+}
+
+.header-right{
+    justify-content: flex-end;
+}
+
+
+.top-text-img {
+    display: flex;
+    margin: 8px;
+    border-bottom-style: solid;
+    align-items: center;
+}
+
+.top-text-left {
+    width: 75%;
+    text-align: center;
+}
+
+.top-img-right {
+    border-radius:4em;
+}
+
+.top-img-right-container{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+h2 {
+    padding: 8px;
+}
+
+p {
+    padding: 4px;
+}
+
+.examples-h1 {
+    text-align: center;
+}
+
+.examples {
+
+}
+
+.example-card {
+
+}
+
+
+.container {
+    width: 30%;
+    background-color: #E8E2D8;
+    overflow: hidden;
+    border-radius: 1em;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.user-image {
+
+}
+
+.user-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content {
+    color: #565656;
+    padding: 2.2em;
+    flex-direction:column;
+    align-items: center;
+}
+
+.name {
+    text-transform: uppercase;
+}
+
+
+a {
+    text-decoration: none;
+    color: #565656;
+    transition: all 0.3s;
+    font-size: 1.5rem;
+    margin-right: 1.2em;
+}
+
+a:last-child {
+    margin: 0;
+}
+
+.containers {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin: 8px;
+}
+
+
+.button {
+
+  border-radius: 20px;
+  background-color: #6F8F72;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button2 {
+  border-radius: 20px;
+  background-color: #2D3C59;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 20px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.footer {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom-text-img{
+
+}
+
+.bottom-text-left {
+
+}
+
+.bottom-img-right {
+
+}
+
+/*modal*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 2em;
+  background-color: #479a84;
+  padding: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* form in modal*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    background-color: #e7f6f6;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #94d4d4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #47704b;
+}
+
+
+/* mobile functionality */
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .top-text-img {
+    flex-direction: column;
+  }
+
+  .top-img-right{
+      display:none
+  }
+
+    .containers {
+      flex-direction:column;
+      align-items: center;
+  }
+
+  .container {
+      width: 85%;
+      margin-bottom: 10px;
+
+  }
+
+
+}
+
+.details {
+    margin-bottom: 1.5rem;
+}
+
+/* hamburger */
+
+*, *:before, *:after
+{ box-sizing: border-box; }
+
+body {
+  overflow-x: hidden;
+}
+
+label .menu {
+  position: absolute;
+  right: -100px;
+  top: -100px;
+  z-index: 100;
+  width: 200px;
+  height: 200px;
+  background: #94d6d5;
+  border-radius: 50% 50% 50% 50%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+  cursor: pointer;
+
+}
+
+label .hamburger {
+  position: absolute;
+  top: 135px;
+  left: 50px;
+  width: 30px;
+  height: 2px;
+  background: black;
+  display: block;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+label .hamburger:after, label .hamburger:before {
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+label .hamburger:before { top: -10px; }
+
+label .hamburger:after { bottom: -10px; }
+
+label input { display: none; }
+
+label input:checked + .menu {
+  box-shadow: 0 0 0 100vw #456847, 0 0 0 100vh #456847;
+  border-radius: 0;
+
+}
+
+label input:checked + .menu .hamburger {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+label input:checked + .menu .hamburger:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  bottom: 0;
+
+}
+
+label input:checked + .menu .hamburger:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  top: 0;
+
+}
+
+label input:checked + .menu + ul { opacity: 1; }
+
+label ul {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: .25s 0s ease-in-out;
+  transition: .25s 0s ease-in-out;
+}
+
+label a {
+  margin-bottom: 1em;
+  display: block;
+  color: #f38630;
+  text-decoration: none;
+
+}
+
+.menu{
+    background-color: black;
+}
