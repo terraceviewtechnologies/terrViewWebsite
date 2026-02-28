@@ -329,6 +329,10 @@ input[type=submit]:hover {
       .empty-card-bottom{
           height:2rem;
       }
+
+      .form-container{
+          width: 90%;
+      }
 }
 
 
@@ -436,6 +440,10 @@ label a {
 
 }
 
+.opening-link {
+    color: #e7f6f6;
+    text-decoration: none;
+}
 .menu-item {
     list-style: none;
     margin: 1rem;
