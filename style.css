@@ -9,6 +9,7 @@
 img {
     max-width:100%;
     height:auto;
+
 }
 
 .inter-font {
@@ -71,10 +72,12 @@ html, body {
         grid-area: text;
         justify-self:center;
         align-self:center;
+
     }
     .top-img-right-container {
         grid-area: image;
         width:100%;
+        height:auto;
     }
 
     .card1{
@@ -106,6 +109,18 @@ html, body {
     .empty{
         grid-area: empty;
     }
+
+    .grid-contact {
+          display: grid;
+          width: 100%;
+            min-height: 100vh;
+          grid-template-columns: auto;
+          grid-template-rows: 10% 20% 70%;
+          grid-template-areas:
+            "header"
+            "empty"
+            "contact-form";
+        }
 .header {
     grid-area: header;
     display: flex;
@@ -125,13 +140,6 @@ html, body {
 }
 
 
-.top-text-img {
-    display: flex;
-    margin: 8px;
-    border-bottom-style: solid;
-    align-items: center;
-}
-
 .top-text-left {
     text-align: center;
 }
@@ -144,15 +152,6 @@ html, body {
     display:flex;
     justify-content: flex-end;
 }
-
-.row {
-  display: flex;
-}
-
-.column {
-  flex: 50%;
-}
-
 h2 {
     padding: 8px;
 }
@@ -164,15 +163,6 @@ p {
 .examples-h1 {
     text-align: center;
 }
-
-.examples {
-
-}
-
-.example-card {
-
-}
-
 
 .container {
     width: 90%;
@@ -207,16 +197,6 @@ p {
     height:20px;
 }
 
-.user-image {
-
-}
-
-.user-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
 .content {
     color: #565656;
     padding: 2.2em;
@@ -226,13 +206,6 @@ p {
 
 .name {
     text-transform: uppercase;
-}
-
-
-.opening-link {
-    text-decoration: none;
-    color: #e7f6f6;
-    font-size: 1.5rem;
 }
 
 .button {
@@ -284,10 +257,10 @@ p {
 /*form*/
 
 .form-container {
-  margin: auto; /* 15% from the top and centered */
+  margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 60%;
   border-radius: 2em;
   background-color: #479a84;
   padding: 20px;
@@ -295,14 +268,14 @@ p {
 
 input[type=text], select, textarea {
     background-color: #e7f6f6;
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
 }
 
 
@@ -416,7 +389,7 @@ label .hamburger:after { bottom: -10px; }
 label input { display: none; }
 
 label input:checked + .menu  {
-  box-shadow: 0 0 0 100vw #94d6d5, 0 0 0 100vh #94d6d5;
+  box-shadow: 0 0 0 100vw #94d6d5, 0 0 0 200vh #94d6d5;
   border-radius: 0;
 
 }
