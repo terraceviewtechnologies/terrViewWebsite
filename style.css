@@ -101,7 +101,6 @@ img {
         "text text text text text image image image image image image image" auto
         "card1 card1 card1 card1 card2 card2 card2 card2 card3 card3 card3 card3" auto
         / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      gap: 8px;
 }
 
 .top-text-left {
