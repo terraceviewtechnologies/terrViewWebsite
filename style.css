@@ -118,18 +118,41 @@ img {
 }
 
 .home-card {
-    width: 90%;
     background: #3F5EFB;
     background: radial-gradient(circle, rgba(63, 94, 251, 0.3) 0%, rgba(252, 70, 107, 0.3) 100%);
     border:solid;
     border-color:#f8f8ff80;
     overflow: hidden;
     border-radius: 1em;
+    width: 90%;
+    height:100%;
     text-align: center;
-    display: flex;
-      flex-direction: column;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "card-image"
+      "card-text"
+      "card-button"
+      "empty-card-bottom";
       padding-bottom: 25px;
       color:white;
+}
+
+.card-image{
+    grid-area: card-image;
+}
+
+.card-text{
+    grid-area: card-text;
+}
+
+.card-button {
+    grid-area: card-button;
+    align-self:end;
+}
+.empty-card-bottom{
+    height:20px;
 }
 
 .button {
