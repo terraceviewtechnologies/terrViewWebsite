@@ -8,51 +8,44 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-<div class="grid-contact">
+    <div class="nav" id="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="grid-contact">
+        <div class="contact-form">
+            <div class="form-container">
+                <form name="contact" method="POST" data-netlify="true">
 
-    <div class="header">
-        <div class="header-left">
-            <a href="home.html">
-            <img src="images/terrViewLogo.png" alt="logo" style="max-height: 6rem;">
-            </a>
-            <h1>Terrace View Technologies</h1>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+
+                    <label for="Email">Email</label>
+                    <input type="text" id="Email" name="Email" placeholder="Best email to reach you..">
+
+                    <label for="Message">Message</label>
+                    <textarea id="Message" name="Message" placeholder="Tell us about your project!"
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+            </div>
         </div>
-        <div class="header-right">
-            <label>
-            <input type="checkbox">
-            <span class="menu"> <span class="hamburger"></span> </span>
-            <ul>
-              <li class="menu-item"> <a href="home.html">Home</a> </li>
-              <li class="menu-item"> <a href="about.html">About</a> </li>
-              <li class="menu-item"> <a  href="contact.html">Contact</a> </li>
-            </ul>
     </div>
-    </div>
-    <div class="empty"></div>
-<div class="contact-form">
-  <div class="form-container">
-    <form name="contact" method="POST" data-netlify="true">
-
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name..">
-
-        <label for="Email">Email</label>
-        <input type="text" id="Email" name="Email" placeholder="Best email to reach you..">
-
-        <label for="Message">Message</label>
-        <textarea id="Message" name="Message" placeholder="Tell us about your project!" style="height:200px"></textarea>
-
-        <input type="submit" value="Submit">
-
-      </form>
-  </div>
-</div>
-</div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

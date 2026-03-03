@@ -8,45 +8,103 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="grid-about">
-    <div class="header">
-        <div class="header-left">
-            <a href="home.html">
-            <img src="images/terrViewLogo.png" alt="logo" style="max-height: 6rem;">
-            </a>
-            <h1>Terrace View Technologies</h1>
-        </div>
-        <div class="header-right">
-            <label>
-            <input type="checkbox">
-            <span class="menu"> <span class="hamburger"></span> </span>
-            <ul>
-              <li class="menu-item"> <a href="home.html">Home</a> </li>
-              <li class="menu-item"> <a href="about.html">About</a> </li>
-              <li class="menu-item"> <a  href="contact.html">Contact</a> </li>
-            </ul>
+    <div class="nav" id="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
-</div>
-<div class="empty">
-</div>
 
-        <div class="about-text">
-            <h2>Web design made easy</h2>
-            <p>Here at Terrace View Technologies we believe in doing things ourselves.</p>
-            <p>We do not use AI tools or frameworks to build our websites for us.</p>
-            <p>We build fast, easy to navigate, and well designed static websites.</p>
-            <p>This leads to an overall more secure website that will continue to run without issues</p>
-            <p>Your clients and customers will never have to worry about their data because no data will be exchanged</p>
-            <p>No ads going to other services</p>
-            <p>Your website will be focused solely on you and your brand</p>
-            <p>We are in this buisness to make connections and hope to continue our partnerships for years to come</p>
+    <div class="grid-about">
+        <div class="about-top-text">
+            <h2>About us</h2>
+            <p>Terrace View Technologies started to provide a better service when it comes to web design.</p>
+            <p>We want help small buisnesses succeed.</o>
+            <p>All code it written by hand, so you get a quicker, easier, and more secure website.</p>
+            <p>Here at Terrace View Technologies we believe in doing things ourselves and making things we stand
+                behind.</p>
         </div>
+        <div class="about-top-image">
+            <img src="images/terrViewLogo.png" alt="logo" class="img-logo" />
+        </div>
+        <div class="card1-about">
+            <div class="container-about">
+                <div class="card-text">
+                    <h3 class="name">Thoughtful Design</h3>
+                    <p>We design everything with the users in mind first and foremost</p>
+                    <p>We use reactive and mobile first design choices.</p>
+                    <p>This means that your customers will get a seamless experience every time they go to your website.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card2-about">
+            <div class="container-about">
+                <div class="card-text">
+                    <h3 class="name">Client first</h3>
+                    <p>We always want to put the client first.</p>
+                    <p>This means that if you need something changed or fixed you will directly deal with us.</p>
+                    <p>No more talking to an automated machine or waiting days to have an issue resolved or an edit made
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card3-about">
+            <div class="container-about">
+                <div class="card-text">
+                    <h3 class="name">No AI/Website Builders</h3>
+                    <p>We do not use and buiilders like wordpress or AI to code our websites.</p>
+                    <p>This means that you don't have to worrk about constant updates.</p>
+                    <p>It will just work</p>
+                </div>
+            </div>
+        </div>
+        <div class="card4-about">
+            <div class="container-about">
+                <div class="card-text">
+                    <h3 class="name">Faster Websites</h3>
+                    <p>Our websites load quicker without everything else bogging them down.</p>
+                    <p>This translates to more traffic and better overall results</p>
+                </div>
+            </div>
+        </div>
+        <div class="card5-about">
+            <div class="container-about">
+                <div class="card-text">
+                    <h3 class="name">More Secure</h3>
+                    <p>Our websites are built secure from the start</p>
+                    <p>You will never have to worry about anyones data because no data will be exchanging hands</p>
+                </div>
+            </div>
+        </div>
+        <div class="card6-about">
+            <div class="container-about">
+                <div class="card-text">
+                    <h3 class="name">Building Relationships</h3>
+                    <p>We believe in building a relationship with all our clients.</p>
+                    <p>If you have any issues or want anything edited we will be there every step of the way</p>
+                    <p>We are in this buisness to make connections and hope to continue our partnerships for years to
+                        come</p>
+                </div>
+            </div>
+        </div>
+
     </div>
-<script src="script.js"></script>
+    <div class="footer">
+        <h2>Terrace View Technologies LLC</h2>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
