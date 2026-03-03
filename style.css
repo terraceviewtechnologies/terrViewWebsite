@@ -101,6 +101,7 @@ img {
         "text text text text text image image image image image image image" auto
         "card1 card1 card1 card1 card2 card2 card2 card2 card3 card3 card3 card3" auto
         / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        text-align:center;
 }
 
 .top-text-left {
@@ -191,6 +192,7 @@ img {
   .grid-home {
         display: grid;
         row-gap: 1rem;
+        width:100%;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
