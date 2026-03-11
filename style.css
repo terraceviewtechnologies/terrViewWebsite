@@ -24,7 +24,7 @@ p {
 body {
     margin:0;
     padding:0;
-    background-image: url("images/background-cropped.png");
+    background-image: url("images/background-cropped.jpeg");
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
 }
@@ -159,7 +159,7 @@ img {
 .button {
 
   border-radius: 20px;
-  background-color: #6F8F72;
+  background-color: #85C79A;
   border: none;
   color: #FFFFFF;
   font-size: 1.25rem;
@@ -451,24 +451,7 @@ input[type=submit]:hover {
     grid-area:gap;
 }
 
-    .button-pricing{
-            transition: all .5s ease;
-            color: white;
-            border: 3px solid white;
-            font-family:'Montserrat', sans-serif;
-            text-transform: uppercase;
-            text-align: center;
-            line-height: 1;
-            font-size: 17px;
-            background-color : transparent;
-            padding: 10px;
-            outline: none;
-            border-radius: 4px;
-        }
-        .button-pricing:hover {
-            color: #001F3F;
-            background-color: #fff;
-        }
+
         /* mobile pricing page*/
 
 
@@ -492,4 +475,48 @@ input[type=submit]:hover {
 .footer{
   text-align: center;
   color:white;
+}
+
+
+/* buttons */
+
+.buttons {
+text-align: center;
+}
+
+.btn-hover {
+width: 200px;
+font-size: 16px;
+font-weight: 600;
+color: #fff;
+cursor: pointer;
+margin: 20px;
+height: 55px;
+text-align:center;
+border: none;
+background-size: 300% 100%;
+
+border-radius: 1rem;
+moz-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+background-position: 100% 0;
+moz-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+-webkit-transition: all .4s ease-in-out;
+transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+outline: none;
+}
+
+
+.btn-hover.color-1 {
+background-image: linear-gradient(to right, #320A6B, #065084, #85C79A, #EDF7BD);
+box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
