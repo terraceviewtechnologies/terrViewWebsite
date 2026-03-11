@@ -42,6 +42,8 @@ img {
   display:flex;
 }
 
+
+
 /* Style the links inside the navigation bar */
 .nav a {
   float: left;
@@ -98,9 +100,9 @@ img {
 .grid-home{
     display: grid;
       grid:
-        "text text text text text image image image image image image image" auto
-        "card1 card1 card1 card1 card2 card2 card2 card2 card3 card3 card3 card3" auto
-        / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        ". text text text text text image image image image image image image . " auto
+        ". card1 card1 card1 card1 card2 card2 card2 card2 card3 card3 card3 card3 . " auto
+        / 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
         text-align:center;
         grid-row-gap:8px;
 }
@@ -118,6 +120,17 @@ img {
     height:auto;
 }
 
+.card1{
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+
+
 .home-card {
     background: #3F5EFB;
     background: radial-gradient(circle, rgba(63, 94, 251, 0.3) 0%, rgba(252, 70, 107, 0.3) 100%);
@@ -127,6 +140,7 @@ img {
     border-radius: 1em;
     width: 90%;
     height:100%;
+    margin:auto;
     text-align: center;
     display: grid;
     grid-template-columns: auto;
@@ -193,16 +207,6 @@ img {
 .button:hover span:after {
   opacity: 1;
   right: 0;
-}
-
-.card1{
-    grid-area: card1;
-}
-.card2{
-    grid-area: card2;
-}
-.card3{
-    grid-area: card3;
 }
 
 /*mobile home page */
@@ -404,77 +408,12 @@ input[type=submit]:hover {
   background-color: #47704b;
 }
 
-/* pricing page */
 
-.grid-pricing {
-      display: grid;
-          color: white;
-      row-gap: 20px;
-      grid-template-columns:auto;
-      grid-template-rows: auto;
-      grid-template-areas:
-          "gap gap gap gap gap gap"
-          "card1 card1 card2 card2 card3 card3"
-          "card1 card1 card2 card2 card3 card3"
-          "card1 card1 card2 card2 card3 card3"
-          "card1 card1 card2 card2 card3 card3";
-    }
-
-
-    .container-pricing{
-        display: flex;
-          flex-direction: column;
-}
-.container-pricing{
-    border-radius: 12px;
-    border: 6px solid rgba(255, 255, 255, 0.125);
-    margin: 1rem;
-    background: #3F5EFB;
-    background: radial-gradient(circle, rgba(0, 31, 61, 0.3) 0%, rgba(59, 151, 151, 0.3) 100%);
-    height:100%;
-}
-
-.name {
-    text-transform: uppercase;
-    text-align:center;
-}
-
-.ul-pricing{
-    padding:1.5rem;
-}
-.price{
-    margin-bottom:1rem;
-}
-
-.gap{
-    text-align:center;
-    grid-area:gap;
-}
-
-
-        /* mobile pricing page*/
-
-
-        @media only screen and (max-width: 620px) {
-
-            .grid-pricing {
-                  display: grid;
-                      color: white;
-                  row-gap: 20px;
-                  grid-template-columns:auto;
-                  grid-template-rows: auto;
-                  grid-template-areas:
-                  "gap gap"
-                      "card1 card1"
-                      "card2 card2"
-                      "card3 card3";
-                }
-
-        }
 /*footer */
 .footer{
   text-align: center;
   color:white;
+  margin-top:4rem;
 }
 
 
