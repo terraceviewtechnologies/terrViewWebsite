@@ -100,7 +100,7 @@ img {
 .grid-home{
     display: grid;
       grid:
-        ". text text text text text image image image image image image image . " auto
+        ". text text text text text text image image image image image image . " auto
         ". card1 card1 card1 card1 card2 card2 card2 card2 card3 card3 card3 card3 . " auto
         / 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
         grid-row-gap:8px;
@@ -360,9 +360,6 @@ img {
               "about-bottom"
                 ;
           }
-
-
-
     .about-top-text{
         grid-area: about-top-text;
         align-content:center;
@@ -372,7 +369,39 @@ img {
         border-radius:1rem;
         background: linear-gradient(90deg,rgba(93, 182, 217, 0.3) 0%, rgba(125, 86, 204, 0.3) 100%);
         padding:0;
+        }
     }
+
+    @media only screen and (max-width: 930px) and (min-width: 621px) {
+        .grid-about {
+            color:white;
+              display: grid;
+              width: 100%;
+                min-height: 100vh;
+                row-gap: 1rem;
+              grid-template-columns: repeat(6, 1fr);
+              grid-template-rows:auto;
+              grid-template-areas:
+              "about-top-text about-top-text about-top-text about-top-text about-top-image about-top-image"
+                "card1 card1 card2 card2 card3 card3"
+                "card4 card4 card5 card5 card6 card6"
+                "about-bottom about-bottom about-bottom about-bottom about-bottom about-bottom"
+                  ;
+            }
+
+            .about-top-image{
+                align-items:center;
+            }
+
+            .grid-home{
+                display: grid;
+                  grid:
+                    ". text text text text text text text image image image image image . " auto
+                    ". card1 card1 card1 card1 card2 card2 card2 card2 card3 card3 card3 card3 . " auto
+                    / 0.25fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.25fr;
+                    grid-row-gap:8px;
+            }
+
     }
 
 /* contact page */
