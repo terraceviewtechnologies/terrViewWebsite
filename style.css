@@ -220,21 +220,24 @@ img {
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
 
-  .top-img-right{
-      display:none
-  }
 
   .grid-home {
         display: grid;
         row-gap: 1rem;
+        margin-top:2rem;
         width:100%;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(4,1fr);
+        grid-template-rows: auto;
         grid-template-areas:
             "text text text text text text"
+            "image image image image image image"
             "card1 card1 card1 card1 card1 card1"
             "card2 card2 card2 card2 card2 card2"
             "card3 card3 card3 card3 card3 card3";
+      }
+
+      .top-img-right-container{
+          width:100%;
       }
 
       .card-text{
@@ -365,9 +368,6 @@ img {
         align-content:center;
         width:95%;
         margin:auto;
-        border: 1px solid white;
-        border-radius:1rem;
-        background: linear-gradient(90deg,rgba(93, 182, 217, 0.3) 0%, rgba(125, 86, 204, 0.3) 100%);
         padding:0;
         }
     }
