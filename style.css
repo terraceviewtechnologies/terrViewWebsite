@@ -24,7 +24,7 @@ p {
 body {
     margin:0;
     padding:0;
-    background-image: url("images/background-night-cropped.jpeg");
+    background-image: url("images/background-cropped.png");
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
 }
@@ -40,6 +40,7 @@ img {
 .nav {
   overflow: hidden;
   display:flex;
+  background: black;
 }
 
 
@@ -110,17 +111,19 @@ img {
     grid-area: text;
     justify-self:center;
     align-self:center;
-    color:white;
     margin-right:1rem;
     border: 1px solid white;
     border-radius:1rem;
-    background: linear-gradient(90deg,rgba(93, 182, 217, 0.3) 0%, rgba(125, 86, 204, 0.3) 100%);
+    background: #F4F0E4;
+    background: linear-gradient(90deg,  rgba(198, 224, 240, 1) 0%, rgba(244, 240, 228, 1) 50%);
+    color: #2A3F4C;
 
 }
 .top-img-right-container {
     grid-area: image;
-    width:100%;
+    width:80%;
     height:auto;
+    margin-left:auto;
 }
 
 .card1{
@@ -136,7 +139,7 @@ img {
 
 .home-card {
     background: #3F5EFB;
-    background: radial-gradient(circle, rgba(63, 94, 251, 0.3) 0%, rgba(252, 70, 107, 0.3) 100%);
+    background: radial-gradient(circle, rgba(63, 94, 251, 0.5) 0%, rgba(252, 70, 107, 0.5) 100%);
     border:solid;
     border-color:#f8f8ff80;
     overflow: hidden;
@@ -163,6 +166,7 @@ img {
 
 .card-text{
     grid-area: card-text;
+    margin-left:1rem;
 }
 
 .card-button {
@@ -253,7 +257,6 @@ img {
 
 /* about page */
 .grid-about {
-    color:white;
       display: grid;
       width: 100%;
         min-height: 100vh;
@@ -273,9 +276,7 @@ img {
         align-content:center;
         margin-left:2rem;
         padding:1rem;
-        border: 1px solid white;
-        border-radius:1rem;
-        background: linear-gradient(90deg,rgba(93, 182, 217, 0.5) 0%, rgba(125, 86, 204, 0.4) 100%);
+        color: white;
     }
     .img-logo{
         width:50%;
@@ -328,12 +329,12 @@ img {
     }
 
     .container-about{
-        background: linear-gradient(90deg,rgba(42, 123, 155, 0.6) 0%, rgba(43, 207, 198, 0.5) 50%, rgba(114, 68, 184, 0.4) 100%);
+        background: #F4F0E4;
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(4.8px);
         -webkit-backdrop-filter: blur(4.8px);
-        border: 1px solid rgba(255, 255, 255, 1);
+        border: 1px solid black;
         height:100%;
     }
 
@@ -341,7 +342,6 @@ img {
     @media only screen and (max-width: 620px) {
       /* For mobile phones: */
       .grid-about {
-          color:white;
             display: grid;
             width: 100%;
               min-height: 100vh;
@@ -413,12 +413,12 @@ img {
 }
 .form-container {
   margin: auto;
-  margin-top:20vh;
+  margin-top:5vh;
   padding: 20px;
   border: 6px solid #888;
   width: 60%;
   border-radius: 2em;
-  background: linear-gradient(90deg,rgba(42, 123, 155, 0.8) 0%, rgba(43, 207, 198, 0.5) 50%, rgba(114, 68, 184, 0.3) 100%);
+  background: #F4F0E4;
   padding: 20px;
 }
 
@@ -430,7 +430,6 @@ img {
 }
 
 input[type=text], select, textarea {
-    background-color: #e7f6f6;
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -443,13 +442,13 @@ input[type=text], select, textarea {
 
 
 input[type=submit] {
-  background-color: #94d4d4;
+  background-color: #85C79A;
   color: white;
   padding: 1rem 2rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size:1rem;
+  font-size:1.5rem;
 }
 
 
