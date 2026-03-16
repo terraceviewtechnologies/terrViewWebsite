@@ -1,10 +1,12 @@
 /* global */
 
-.inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: light-300;
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+  font-family: 'Inter';
   font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/inter-v20-latin-regular.woff2') format('woff2');
 }
 
 h1 {
@@ -32,6 +34,20 @@ img {
     max-width:100%;
     height:auto;
 
+}
+
+.wrap {
+overflow: hidden;
+position: relative;
+}
+
+.background-image {
+opacity: 0.3;
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: auto;
 }
 
 
@@ -114,8 +130,8 @@ img {
     margin-right:1rem;
     border: 1px solid white;
     border-radius:1rem;
-    background: #F4F0E4;
-    background: linear-gradient(90deg,  rgba(198, 224, 240, 1) 0%, rgba(244, 240, 228, 1) 50%);
+    background: #D1B8CB;
+    background: linear-gradient(90deg, rgba(209, 184, 203, 1) 0%, rgba(235, 225, 209, 1) 100%);
     color: #2A3F4C;
 
 }
@@ -138,8 +154,7 @@ img {
 
 
 .home-card {
-    background: #3F5EFB;
-    background: radial-gradient(circle, rgba(63, 94, 251, 0.5) 0%, rgba(252, 70, 107, 0.5) 100%);
+    background: #EBE1D1;
     border:solid;
     border-color:#f8f8ff80;
     overflow: hidden;
@@ -157,7 +172,6 @@ img {
       "card-button"
       "empty-card-bottom";
       padding-bottom: 25px;
-      color:white;
 }
 
 .card-image{
@@ -180,7 +194,7 @@ img {
 .button {
 
   border-radius: 20px;
-  background-color: #85C79A;
+  background-color: #404A63;
   border: none;
   color: #FFFFFF;
   font-size: 1.25rem;
@@ -506,4 +520,53 @@ outline: none;
 .btn-hover.color-1 {
 background-image: linear-gradient(to right, #320A6B, #065084, #85C79A, #EDF7BD);
 box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.price-card{
+    background: #EBE1D1;
+    border:solid;
+    border-color:black;
+    overflow: hidden;
+    border-radius: 1em;
+    width: 30%;
+    height:100%;
+    margin:auto;
+    padding-bottom:20px;
+    text-align: center;
+
+}
+
+.cards{
+    display:flex;
+    justify-content:space-evenly;
+}
+
+
+.price-card p {
+    padding:0;
+}
+
+.price {
+    background: #D1DBEB;
+    border:solid;
+    border-color:black;
+    overflow: hidden;
+    border-radius: 1em;
+    text-align: center;
+    width:60%;
+    margin:auto;
+    margin-bottom:30px;
+
+}
+
+@media only screen and (max-width: 620px) {
+
+    .cards{
+        display:block;
+    }
+
+    .price-card{
+        width:95%;
+        margin-bottom:1rem;
+    }
 }
