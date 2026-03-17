@@ -9,13 +9,19 @@
   src: url('./fonts/inter-v20-latin-regular.woff2') format('woff2');
 }
 
-h1 {
-    font-weight: 600;
+@font-face {
+    font-display: swap;
+  font-family: 'Cooper';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/cooper-black.woff2') format('woff2');
 }
 
-h2 {
-    font-weight: 500;
-    padding: 8px;
+
+
+h1, h2, h3 {
+    font-family: "Cooper", sans-serif;
+    font-optical-sizing: auto;
 }
 
 p {
@@ -29,6 +35,12 @@ body {
     background-image: url("images/background-cropped.png");
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
+}
+
+.logo-font{
+    font-family: "Cooper", sans-serif;
+    font-optical-sizing: auto;
+    font-size:1.25rem;
 }
 img {
     max-width:100%;
@@ -57,6 +69,7 @@ height: auto;
   overflow: hidden;
   display:flex;
   background: black;
+  align-items:end;
 }
 
 
@@ -69,7 +82,9 @@ height: auto;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-family: "Cooper", sans-serif;
+  font-optical-sizing: auto;
+  font-size:1.25rem;
 }
 
 /* Change the color of links on hover */
