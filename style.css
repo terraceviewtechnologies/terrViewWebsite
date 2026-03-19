@@ -537,42 +537,58 @@ background-image: linear-gradient(to right, #320A6B, #065084, #85C79A, #EDF7BD);
 box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
 
-.price-card{
+.serv-card1, .serv-card2, .serv-card3{
     background: #EBE1D1;
     border:solid;
     border-color:black;
     overflow: hidden;
     border-radius: 1em;
-    width: 30%;
-    height:100%;
     margin:auto;
     padding-bottom:20px;
     text-align: center;
+    width:80%;
+    height:100%;
+      width: 100%;
 
+      display: grid;
+      grid:
+        "serv-heading" 0.25fr
+        "serv-text" 1fr
+        "serv-button" 0.25fr
+        / 1fr;
+      gap: 8px;
+
+      align-content: space-between;
 }
+
+    .serv-heading { grid-area: serv-heading; border-bottom:solid black 3px; }
+    .serv-text { grid-area: serv-text; }
+    .serv-button { grid-area: serv-button; }
 
 .cards{
-    display:flex;
-    justify-content:space-evenly;
+      width: 100%;
+
+      display: grid;
+      grid:
+        "serv-card1 serv-card2 serv-card3" 1fr
+        / 1fr 1fr 1fr;
+      gap: 8px;
+
+      align-content: space-between;
+    }
+
+    .serv-card1 { grid-area: serv-card1; }
+    .serv-card2 { grid-area: serv-card2; }
+    .serv-card3 { grid-area: serv-card3; }
+
 }
+
 
 
 .price-card p {
     padding:0;
 }
 
-.price {
-    background: #D1DBEB;
-    border:solid;
-    border-color:black;
-    overflow: hidden;
-    border-radius: 1em;
-    text-align: center;
-    width:60%;
-    margin:auto;
-    margin-bottom:30px;
-
-}
 
 @media only screen and (max-width: 620px) {
 
@@ -580,8 +596,5 @@ box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
         display:block;
     }
 
-    .price-card{
-        width:95%;
-        margin-bottom:1rem;
-    }
+
 }
