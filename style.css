@@ -37,29 +37,10 @@ body {
     font-optical-sizing: auto;
 }
 
-.logo-font{
-    font-family: "Cooper", sans-serif;
-    font-optical-sizing: auto;
-    font-size:1.25rem;
-}
 img {
     max-width:100%;
     height:auto;
 
-}
-
-.wrap {
-overflow: hidden;
-position: relative;
-}
-
-.background-image {
-opacity: 0.3;
-position: absolute;
-left: 0;
-top: 0;
-width: 100%;
-height: auto;
 }
 
 
@@ -179,13 +160,12 @@ height: auto;
     margin:auto;
     text-align: center;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "card-image"
-      "card-text"
-      "card-button"
-      "empty-card-bottom";
+    grid:
+      "card-image" 1fr
+      "card-text" 0.4fr
+      "card-button"0.2fr
+      "empty-card-bottom" 0.1fr
+      / 1fr;
       padding-bottom: 25px;
 }
 
