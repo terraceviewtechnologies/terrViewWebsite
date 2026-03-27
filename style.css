@@ -150,9 +150,9 @@ img {
 
 
 .home-card {
-    background: #EBE1D1;
+    background: #f9fdfdbb;
     border:solid;
-    border-color:#f8f8ff80;
+    border-color:#26242680;
     overflow: hidden;
     border-radius: 1em;
     width: 95%;
@@ -341,7 +341,7 @@ img {
     }
 
     .container-about{
-        background: #F4F0E4;
+        background: #f9fdfdbb;
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(4.8px);
@@ -417,7 +417,7 @@ img {
 
 
 /*form*/
-. contact-form{
+.contact-form{
     margin-top: 2rem;
 }
 .form-container {
@@ -427,7 +427,7 @@ img {
   border: 6px solid #888;
   width: 60%;
   border-radius: 2em;
-  background: linear-gradient(to right, rgba(63, 94, 251, 0.4) 0%, rgba(252, 70, 107, 0.4) 100%);
+  background-color: #f9fdfdbb;
   padding: 20px;
 }
 
@@ -448,23 +448,6 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical
 }
-
-
-input[type=submit] {
-  background-color: #85C79A;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size:1.5rem;
-}
-
-
-input[type=submit]:hover {
-  background-color: #C9BEFF;
-}
-
 
 /*footer */
 .footer{
@@ -493,7 +476,6 @@ border: none;
 background-size: 300% 100%;
 
 border-radius: 1rem;
-moz-transition: all .4s ease-in-out;
 -o-transition: all .4s ease-in-out;
 -webkit-transition: all .4s ease-in-out;
 transition: all .4s ease-in-out;
@@ -501,7 +483,6 @@ transition: all .4s ease-in-out;
 
 .btn-hover:hover {
 background-position: 100% 0;
-moz-transition: all .4s ease-in-out;
 -o-transition: all .4s ease-in-out;
 -webkit-transition: all .4s ease-in-out;
 transition: all .4s ease-in-out;
@@ -518,7 +499,7 @@ box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
 
 .serv-card1, .serv-card2, .serv-card3{
-    background: #EBE1D1;
+    background: #f9fdfdbb;
     border:solid;
     border-color:black;
     overflow: hidden;
@@ -561,7 +542,6 @@ box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
     .serv-card2 { grid-area: serv-card2; }
     .serv-card3 { grid-area: serv-card3; }
 
-}
 
 
 
